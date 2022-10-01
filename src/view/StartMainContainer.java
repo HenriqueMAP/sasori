@@ -2,7 +2,9 @@ package view;
 
 import view.generate.jframes.CreateMainWindow;
 
-public class StartMainContainer {
+import java.awt.*;
+
+public class StartMainContainer extends Thread {
 
     public StartMainContainer() {
 
@@ -15,10 +17,16 @@ public class StartMainContainer {
         System.out.println("StartMainContainer - Starting the container.");
         CreateMainWindow createMainWindow = new CreateMainWindow(mainContainerName, mainContainerWidth, mainContainerHeight,
                 mainContainerPositionX, mainContainerPositionY);
-
+        EventQueue.invokeLater(new Thread() {
+            @Override
+            public void run() {
+                super.run();
+            }
+        });
     }
 
+
     public static void main(String[] args) {
-        new StartMainContainer();
+        //new StartMainContainer();
     }
 }
