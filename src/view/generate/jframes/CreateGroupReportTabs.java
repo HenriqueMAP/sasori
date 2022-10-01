@@ -2,7 +2,8 @@ package view.generate.jframes;
 
 import view.generate.jpanels.CreateReportTab;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JTabbedPane;
 import java.awt.Color;
 
 public class CreateGroupReportTabs {

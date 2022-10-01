@@ -1,12 +1,6 @@
 package view;
 
-import view.generate.jframes.CreateGroupReportTabs;
 import view.generate.jframes.CreateMainWindow;
-import view.generate.jpanels.CreateHeaderWindow;
-import view.generate.jpanels.CreateReportTab;
-
-import javax.swing.*;
-import java.awt.*;
 
 public class StartMainContainer {
 
