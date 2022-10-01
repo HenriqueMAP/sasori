@@ -5,9 +5,10 @@ import view.generate.jframes.CreateMainWindow;
 import view.generate.jpanels.CreateHeaderWindow;
 import view.generate.jpanels.CreateReportTab;
 
-import java.awt.Container;
+import javax.swing.*;
+import java.awt.*;
 
-public class StartMainContainer extends Container {
+public class StartMainContainer {
 
     public StartMainContainer() {
 
@@ -20,13 +21,6 @@ public class StartMainContainer extends Container {
         System.out.println("StartMainContainer - Starting the container.");
         CreateMainWindow createMainWindow = new CreateMainWindow(mainContainerName, mainContainerWidth, mainContainerHeight,
                 mainContainerPositionX, mainContainerPositionY);
-
-
-//        CreateHeaderWindow createHeaderWindow = new CreateHeaderWindow();
-        CreateGroupReportTabs createGroupReportTabs = new CreateGroupReportTabs();
-
-//        createMainWindow.add(createHeaderWindow);
-        createMainWindow.add(createGroupReportTabs.getGroupReportTabs());
 
     }
 

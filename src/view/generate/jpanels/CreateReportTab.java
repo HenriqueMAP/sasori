@@ -5,9 +5,9 @@ import java.awt.Color;
 
 public class CreateReportTab extends JPanel {
 
-    public CreateReportTab(){
-        setName("Report tab");
-        setBackground(Color.BLUE);
+    public CreateReportTab(final String reportTabName, final Color backgroundColor){
+        setName(reportTabName);
+        setBackground(backgroundColor);
         System.out.println("CreateReportTab has been created.");
     }
 }
