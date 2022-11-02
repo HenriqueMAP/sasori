@@ -1,7 +1,5 @@
 package controller;
 
-import view.StartMainContainer;
-
 import java.awt.*;
 
 public class StartApp {
